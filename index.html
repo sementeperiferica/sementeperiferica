@@ -5,8 +5,69 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
         <link rel="stylesheet" href="assets/css/style.css">
-        <link rel="shortcut icon" href="assets/img/Untitled Project.png">
+        <link rel="shortcut icon" href="assets/img/SEMENTE PERIFERICA.png">
         <title>Semente Periférica</title>
+
+        <style>
+    
+            .card-container {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center; 
+                gap: 20px; 
+                padding: 15px;
+            }
+        
+            .card-wrapper {
+                flex: 1 1 calc(100% - 20px); 
+                max-width: calc(100% - 20px);
+            }
+        
+            @media (min-width: 576px) { 
+                .card-wrapper {
+                    flex: 1 1 calc(50% - 20px);
+                    max-width: calc(50% - 20px);
+                }
+            }
+        
+            @media (min-width: 992px) { 
+                .card-wrapper {
+                    flex: 1 1 calc(25% - 20px); 
+                    max-width: calc(25% - 20px);
+                }
+            }
+        
+            .card {
+                width: 100%;
+                height: 100%;
+                border-radius: 8px;
+                overflow: hidden;
+                box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+                transition: transform 0.3s ease;
+            }
+        
+            .card:hover {
+                transform: translateY(-5px);
+            }
+        
+            .card-img {
+                width: 100%;
+                height: 300px;
+                object-fit: cover; 
+            }
+        
+            .card-body {
+                padding: 15px;
+                background: #fff;
+            }
+
+            .card-body > h3{
+                text-align: center;
+                color: #000000;
+            }
+    
+            </style>
+
     </head>
     <body>
 
@@ -23,7 +84,7 @@
                     <ul class="nav__list">
                         <li class="nav__item"><a href="#home" class="nav__link active-link">Página inicial</a></li>
                         <li class="nav__item"><a href="#services" class="nav__link">Propostas</a></li>
-                        <li class="nav__item"><a href="#services" class="nav__link">Sobre a chapa</a></li>
+                        <li class="nav__item"><a href="#chapa" class="nav__link">Sobre a chapa</a></li>
 
                         <li><i class='bx bx-moon change-theme' id="theme-button"></i></li>
                     </ul>
@@ -94,6 +155,206 @@
                         <p class="services__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima molestias labore quis adipisci accusamus exercitationem delectus, quo veniam quae, earum nam laborum. Eius exercitationem magni, libero soluta in nobis atque.</p>
                     </div>
                 </div>
+            </section>
+
+            <section class="services section bd-container" id="chapa">
+                <span class="section-subtitle">Sobre a Chapa</span>
+                <h2 class="section-title">Integrantes:</h2>
+
+                <div class="card-container">
+                    <div class="card-wrapper">
+                        <div class="card">
+                            <img src="assets/img/" class="card-img" alt="Imagem 1">
+                            <div class="card-body">
+                                <h3>Guilherme ferreira santos</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-wrapper">
+                        <div class="card">
+                            <img src="assets/img/Gabriel O.jpg"class="card-img" alt="Imagem 1">
+                            <div class="card-body">
+                                <h3>Gabriel Freitas</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-wrapper">
+                        <div class="card">
+                            <img src="assets/img/KAMILA SARAIVA.jpeg" class="card-img" alt="Imagem 1">
+                            <div class="card-body">
+                                <h3>Kamila Saraiva</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-wrapper">
+                        <div class="card">
+                            <img src="assets/img/Vitor Hugo.jpeg" class="card-img" alt="Imagem 1">
+                            <div class="card-body">
+                                <h3>Vitor Hugo</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-wrapper">
+                        <div class="card">
+                            <img src="assets/img/VINICIUS ALVES.jpeg" class="card-img" alt="Imagem 1">
+                            <div class="card-body">
+                                <h3>Vinicius Alves</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-wrapper">
+                        <div class="card">
+                            <img src="assets/img/WhatsApp Image 2025-02-18 at 13.02.54 (1).jpeg" class="card-img" alt="Imagem 1">
+                            <div class="card-body">
+                                <h3>Título do Card</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-wrapper">
+                        <div class="card">
+                            <img src="assets/img/LUCAS SILVA.jpeg" class="card-img" alt="Imagem 1">
+                            <div class="card-body">
+                                <h3>Lucas Silva</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-wrapper">
+                        <div class="card">
+                            <img src="assets/img/KELLY O. BISPO.jpeg" class="card-img" alt="Imagem 1">
+                            <div class="card-body">
+                                <h3>Kelly Oliveira</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-wrapper">
+                        <div class="card">
+                            <img src="assets/img/MARIA FERNANDA.jpeg" class="card-img" alt="Imagem 1">
+                            <div class="card-body">
+                                <h3>Maria Fernanda</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-wrapper">
+                        <div class="card">
+                            <img src="assets/img/VITORIA BURITI.jpeg" class="card-img" alt="Imagem 1">
+                            <div class="card-body">
+                                <h3>Vitoria Buriti</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-wrapper">
+                        <div class="card">
+                            <img src="assets/img/MARIA LORRANY.jpeg" class="card-img" alt="Imagem 1">
+                            <div class="card-body">
+                                <h3>Maria Lorrany</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-wrapper">
+                        <div class="card">
+                            <img src="assets/img/VICTOR RODRIGUES.jpeg" class="card-img" alt="Imagem 1">
+                            <div class="card-body">
+                                <h3>Victor Rodrigues</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-wrapper">
+                        <div class="card">
+                            <img src="assets/img/JENNIFER MARTINS.jpeg" class="card-img" alt="Imagem 1">
+                            <div class="card-body">
+                                <h3>Jennifer Martins</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-wrapper">
+                        <div class="card">
+                            <img src="assets/img/KAMILLY FREITAS.jpeg" class="card-img" alt="Imagem 1">
+                            <div class="card-body">
+                                <h3>Kamilly Freitas</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-wrapper">
+                        <div class="card">
+                            <img src="assets/img/BIANCA LOPES.jpeg" class="card-img" alt="Imagem 1">
+                            <div class="card-body">
+                                <h3>Bianca Lopes</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-wrapper">
+                        <div class="card">
+                            <img src="assets/img/ISABELLA ALVES.jpeg" class="card-img" alt="Imagem 1">
+                            <div class="card-body">
+                                <h3>Isabela Alves</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-wrapper">
+                        <div class="card">
+                            <img src="assets/img/BRUNA ADRIELLY.jpeg" class="card-img" alt="Imagem 1">
+                            <div class="card-body">
+                                <h3>Bruna Adrielly</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-wrapper">
+                        <div class="card">
+                            <img src="assets/img/VITORIA MAGALHAES.jpeg" class="card-img" alt="Imagem 1">
+                            <div class="card-body">
+                                <h3>Vitoria Magalhaes</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-wrapper">
+                        <div class="card">
+                            <img src="assets/img/KAUANE MARÇAL.jpeg" class="card-img" alt="Imagem 1">
+                            <div class="card-body">
+                                <h3>Kauane Marçal</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-wrapper">
+                        <div class="card">
+                            <img src="assets/img/WhatsApp Image 2025-02-18 at 12.50.33 (2).jpeg" class="card-img" alt="Imagem 1">
+                            <div class="card-body">
+                                <h3>Título do Card</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-wrapper">
+                        <div class="card">
+                            <img src="assets/" class="card-img" alt="Imagem 1">
+                            <div class="card-body">
+                                <h3>Título do Card</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-wrapper">
+                        <div class="card">
+                            <img src="assets/" class="card-img" alt="Imagem 1">
+                            <div class="card-body">
+                                <h3>Título do Card</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-wrapper">
+                        <div class="card">
+                            <img src="assets/" class="card-img" alt="Imagem 1">
+                            <div class="card-body">
+                                <h3>Título do Card</h3>
+                            </div>
+                        </div>
+                    </div>
             </section>
             
         <footer class="footer_section_bd-container">
