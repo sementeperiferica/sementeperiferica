@@ -60,7 +60,9 @@ body.dark-theme{
   --text-color: #fff;
   --body-color: #000000;
   --container-color: #181616;
+
 }
+
 
 .change-theme{
   position: absolute;
