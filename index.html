@@ -69,6 +69,16 @@
             .card-body > p{
                 text-align: center;
             }
+
+            .imagens {
+            display: none;
+            margin-top: 20px;
+            }
+
+            .ecobag{
+                border-radius: 10px;
+            }
+            
     
             </style>
 
@@ -111,7 +121,7 @@
                         <a href="#services" class="button">Propostas</a>
                     </div>
     
-                    <img src="assets/img/SEMENTE PERIFERICA.png" alt="" class="home__img">
+                    <img class="Semente" src="assets/img/SEMENTE PERIFERICA.png" alt="" class="home__img">
                 </div>
             </section>
 
@@ -124,10 +134,38 @@
 
                             Agora, em 2025, seguimos cultivando essa semente, fortalecendo nossa identidade e ampliando nosso impacto. O que começou como um projeto estudantil continua crescendo, e em breve, nossa empresa se expandirá ainda mais, levando a essência do Semente Periférica para novos horizontes.
                             </p>
-                        <a href="https://www.sementeperiferica.com" class="button" target="_blank">Nossos Produtos</a>
+
+                            <a href="#" class="button" id="mostrarImagensBtn">Nossos Produtos</a>
+
+                            <div class="imagens" id="imagensDiv" style="display: none;">
+                                <img class="ecobag" src="assets/img/Ecobag1.jpg" alt="Imagem 1">
+                                <img class="ecobag" src="assets/img/Ecobag2.jpg" alt="Imagem 2">
+
+                                <a href="https://www.sementeperiferica.com/" class="button" id="novoBotao" target="_blank" style="display: none;">Visite a Semente!</a>
+                            </div>
+
+                            <script>
+                                const botao = document.getElementById('mostrarImagensBtn');
+                                const imagensDiv = document.getElementById('imagensDiv');
+                                const novoBotao = document.getElementById('novoBotao');
+
+                                botao.addEventListener('click', function(event) {
+                                    event.preventDefault(); 
+
+                                    if (imagensDiv.style.display === 'none' || imagensDiv.style.display === '') {
+                                        imagensDiv.style.display = 'block';
+                                        novoBotao.style.display = 'inline-block';  
+                                    } else {
+                                        imagensDiv.style.display = 'none';
+                                        novoBotao.style.display = 'none';  
+                                    }
+                                });
+                            </script>
+                                                    
+                                                    
                     </div>
 
-                    <img src="assets/img/SEMENTE PERIFERICA.png" alt="" class="about__img">
+                    <img src="assets/img/SemPeri.png" alt="" class="about__img">
                 </div>
             </section>
 
@@ -205,6 +243,27 @@
                             <img src="assets/img/Guilherme Felipe.jpg" class="card-img" alt="Imagem 1">
                             <div class="card-body">
                                 <h3>Guilherme Felipe</h3>
+                                <p>Presidente</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-wrapper">
+                        <div class="card">
+                            <img src="assets/img/KELLY O. BISPO.jpeg" class="card-img" alt="Imagem 1">
+                            <div class="card-body">
+                                <h3>Kelly Oliveira</h3>
+                                <p>Vice-presidente</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-wrapper">
+                        <div class="card">
+                            <img src="assets/img/EVELLYN SOUZA SANTOS.jpeg" class="card-img" alt="Imagem 1">
+                            <div class="card-body">
+                                <h3>Evellyn Souza Santos</h3>
+                                <p>Secretária</p>
                             </div>
                         </div>
                     </div>
@@ -214,7 +273,7 @@
                             <img src="assets/img/Gabriel O.jpg"class="card-img" alt="Imagem 1">
                             <div class="card-body">
                                 <h3>Gabriel Freitas</h3>
-                                <p>"Bagaço de jaca"</p>
+                                <p>Bagaço de jaca e Coordenador Cultural</p>
                             </div>
                         </div>
                     </div>
@@ -224,6 +283,7 @@
                             <img src="assets/img/KAMILA SARAIVA.jpeg" class="card-img" alt="Imagem 1">
                             <div class="card-body">
                                 <h3>Kamila Saraiva</h3>
+                                <p>Desenhista</p>
                             </div>
                         </div>
                     </div>
@@ -233,6 +293,7 @@
                             <img src="assets/img/Vitor Hugo.jpeg" class="card-img" alt="Imagem 1">
                             <div class="card-body">
                                 <h3>Vitor Hugo</h3>
+                                <p>Coordenador/Esportes: Futebol</p>
                             </div>
                         </div>
                     </div>
@@ -241,129 +302,7 @@
                             <img src="assets/img/VINICIUS ALVES.jpeg" class="card-img" alt="Imagem 1">
                             <div class="card-body">
                                 <h3>Vinicius Alves</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-wrapper">
-                        <div class="card">
-                            <img src="assets/img/WhatsApp Image 2025-02-18 at 13.02.54 (1).jpeg" class="card-img" alt="Imagem 1">
-                            <div class="card-body">
-                                <h3>Jennifer Martins</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-wrapper">
-                        <div class="card">
-                            <img src="assets/img/LUCAS SILVA.jpeg" class="card-img" alt="Imagem 1">
-                            <div class="card-body">
-                                <h3>Lucas Silva</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-wrapper">
-                        <div class="card">
-                            <img src="assets/img/KELLY O. BISPO.jpeg" class="card-img" alt="Imagem 1">
-                            <div class="card-body">
-                                <h3>Kelly Oliveira</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-wrapper">
-                        <div class="card">
-                            <img src="assets/img/MARIA FERNANDA.jpeg" class="card-img" alt="Imagem 1">
-                            <div class="card-body">
-                                <h3>Maria Fernanda</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-wrapper">
-                        <div class="card">
-                            <img src="assets/img/VITORIA BURITI.jpeg" class="card-img" alt="Imagem 1">
-                            <div class="card-body">
-                                <h3>Vitoria Buriti</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-wrapper">
-                        <div class="card">
-                            <img src="assets/img/MARIA LORRANY.jpeg" class="card-img" alt="Imagem 1">
-                            <div class="card-body">
-                                <h3>Maria Lorrany</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-wrapper">
-                        <div class="card">
-                            <img src="assets/img/VICTOR RODRIGUES.jpeg" class="card-img" alt="Imagem 1">
-                            <div class="card-body">
-                                <h3>Victor Rodrigues</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-wrapper">
-                        <div class="card">
-                            <img src="assets/img/JENNIFER MARTINS.jpeg" class="card-img" alt="Imagem 1">
-                            <div class="card-body">
-                                <h3>Giovanna Lemos</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-wrapper">
-                        <div class="card">
-                            <img src="assets/img/KAMILLY FREITAS.jpeg" class="card-img" alt="Imagem 1">
-                            <div class="card-body">
-                                <h3>Kamilly Freitas</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-wrapper">
-                        <div class="card">
-                            <img src="assets/img/BIANCA LOPES.jpeg" class="card-img" alt="Imagem 1">
-                            <div class="card-body">
-                                <h3>Bianca Lopes</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-wrapper">
-                        <div class="card">
-                            <img src="assets/img/ISABELLA ALVES.jpeg" class="card-img" alt="Imagem 1">
-                            <div class="card-body">
-                                <h3>Isabela Alves</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-wrapper">
-                        <div class="card">
-                            <img src="assets/img/BRUNA ADRIELLY.jpeg" class="card-img" alt="Imagem 1">
-                            <div class="card-body">
-                                <h3>Bruna Adrielly</h3>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card-wrapper">
-                        <div class="card">
-                            <img src="assets/img/VITORIA MAGALHAES.jpeg" class="card-img" alt="Imagem 1">
-                            <div class="card-body">
-                                <h3>Vitoria Magalhaes</h3>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card-wrapper">
-                        <div class="card">
-                            <img src="assets/img/KAUANE MARÇAL.jpeg" class="card-img" alt="Imagem 1">
-                            <div class="card-body">
-                                <h3>Kauane Marçal</h3>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card-wrapper">
-                        <div class="card">
-                            <img src="assets/img/WhatsApp Image 2025-02-18 at 12.50.33 (2).jpeg" class="card-img" alt="Imagem 1">
-                            <div class="card-body">
-                                <h3>Irani Eloisa</h3>
+                                <p>Coordenador/Esportes: Futebol</p>
                             </div>
                         </div>
                     </div>
@@ -373,15 +312,152 @@
                             <img src="assets/img/Hemilly victoria.jpeg" class="card-img" alt="Imagem 1">
                             <div class="card-body">
                                 <h3>Hemilly Victoria</h3>
+                                <p>1º Tesoureiro</p>
                             </div>
                         </div>
                     </div>
 
                     <div class="card-wrapper">
                         <div class="card">
-                            <img src="assets/" class="card-img" alt="Imagem 1">
+                            <img src="assets/img/BIANCA LOPES.jpeg" class="card-img" alt="Imagem 1">
                             <div class="card-body">
-                                <h3>Título do Card</h3>
+                                <h3>Bianca Lopes</h3>
+                                <p>2º Tesoureiro</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-wrapper">
+                        <div class="card">
+                            <img src="assets/img/WhatsApp Image 2025-02-18 at 13.02.54 (1).jpeg" class="card-img" alt="Imagem 1">
+                            <div class="card-body">
+                                <h3>Jennifer Martins</h3>
+                                <p>Cultura</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-wrapper">
+                        <div class="card">
+                            <img src="assets/img/LUCAS SILVA.jpeg" class="card-img" alt="Imagem 1">
+                            <div class="card-body">
+                                <h3>Lucas Silva</h3>
+                                <p>Esportes: Basquete</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card-wrapper">
+                        <div class="card">
+                            <img src="assets/img/Rafadsiobd.jpg" class="card-img" alt="Imagem 1">
+                            <div class="card-body">
+                                <h3>Rafael Santos</h3>
+                                <p>Dev Front-End</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-wrapper">
+                        <div class="card">
+                            <img src="assets/img/MARIA FERNANDA.jpeg" class="card-img" alt="Imagem 1">
+                            <div class="card-body">
+                                <h3>Maria Fernanda</h3>
+                                <p>Social Media</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-wrapper">
+                        <div class="card">
+                            <img src="assets/img/VITORIA BURITI.jpeg" class="card-img" alt="Imagem 1">
+                            <div class="card-body">
+                                <h3>Vitoria Buriti</h3>
+                                <p>Desenhista</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-wrapper">
+                        <div class="card">
+                            <img src="assets/img/MARIA LORRANY.jpeg" class="card-img" alt="Imagem 1">
+                            <div class="card-body">
+                                <h3>Maria Lorrany</h3>
+                                <p>Comunicação</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-wrapper">
+                        <div class="card">
+                            <img src="assets/img/VICTOR RODRIGUES.jpeg" class="card-img" alt="Imagem 1">
+                            <div class="card-body">
+                                <h3>Victor Rodrigues</h3>
+                                <p>Social</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-wrapper">
+                        <div class="card">
+                            <img src="assets/img/JENNIFER MARTINS.jpeg" class="card-img" alt="Imagem 1">
+                            <div class="card-body">
+                                <h3>Giovanna Lemos</h3>
+                                <p>Cultural</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-wrapper">
+                        <div class="card">
+                            <img src="assets/img/KAMILLY FREITAS.jpeg" class="card-img" alt="Imagem 1">
+                            <div class="card-body">
+                                <h3>Kamilly Freitas</h3>
+                                <p>Comunicação</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-wrapper">
+                        <div class="card">
+                            <img src="assets/img/ISABELLA ALVES.jpeg" class="card-img" alt="Imagem 1">
+                            <div class="card-body">
+                                <h3>Isabela Alves</h3>
+                                <p>Esportes: Futebol Feminino</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-wrapper">
+                        <div class="card">
+                            <img src="assets/img/BRUNA ADRIELLY.jpeg" class="card-img" alt="Imagem 1">
+                            <div class="card-body">
+                                <h3>Bruna Adrielly</h3>
+                                <p>Social Media</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-wrapper">
+                        <div class="card">
+                            <img src="assets/img/VITORIA MAGALHAES.jpeg" class="card-img" alt="Imagem 1">
+                            <div class="card-body">
+                                <h3>Vitoria Magalhaes</h3>
+                                <p>Social</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-wrapper">
+                        <div class="card">
+                            <img src="assets/img/KAUANE MARÇAL.jpeg" class="card-img" alt="Imagem 1">
+                            <div class="card-body">
+                                <h3>Kauane Marçal</h3>
+                                <p>Social</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-wrapper">
+                        <div class="card">
+                            <img src="assets/img/WhatsApp Image 2025-02-18 at 12.50.33 (2).jpeg" class="card-img" alt="Imagem 1">
+                            <div class="card-body">
+                                <h3>Irani Eloisa</h3>
+                                <p>Social</p>
                             </div>
                         </div>
                     </div>
@@ -394,9 +470,10 @@
                     <a href="#" class="footer__logo">Semente Periférica</a>
                     <br> <br>
                     <div>
-                        <a href="https://www.instagram.com/renatta.3a?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="footer__social"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24">
+                        <a href="https://www.instagram.com/semente.periferica/" class="footer__social" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24">
                             <path fill="#fff" fill-rule="evenodd" d="M7.465 1.066C8.638 1.012 9.012 1 12 1s3.362.013 4.534.066s1.972.24 2.672.511c.733.277 1.398.71 1.948 1.27c.56.549.992 1.213 1.268 1.947c.272.7.458 1.5.512 2.67C22.988 8.639 23 9.013 23 12s-.013 3.362-.066 4.535c-.053 1.17-.24 1.97-.512 2.67a5.4 5.4 0 0 1-1.268 1.949c-.55.56-1.215.992-1.948 1.268c-.7.272-1.5.458-2.67.512c-1.174.054-1.548.066-4.536.066s-3.362-.013-4.535-.066c-1.17-.053-1.97-.24-2.67-.512a5.4 5.4 0 0 1-1.949-1.268a5.4 5.4 0 0 1-1.269-1.948c-.271-.7-.457-1.5-.511-2.67C1.012 15.361 1 14.987 1 12s.013-3.362.066-4.534s.24-1.972.511-2.672a5.4 5.4 0 0 1 1.27-1.948a5.4 5.4 0 0 1 1.947-1.269c.7-.271 1.5-.457 2.67-.511m8.98 1.98c-1.16-.053-1.508-.064-4.445-.064s-3.285.011-4.445.064c-1.073.049-1.655.228-2.043.379c-.513.2-.88.437-1.265.822a3.4 3.4 0 0 0-.822 1.265c-.151.388-.33.97-.379 2.043c-.053 1.16-.064 1.508-.064 4.445s.011 3.285.064 4.445c.049 1.073.228 1.655.379 2.043c.176.477.457.91.822 1.265c.355.365.788.646 1.265.822c.388.151.97.33 2.043.379c1.16.053 1.507.064 4.445.064s3.285-.011 4.445-.064c1.073-.049 1.655-.228 2.043-.379c.513-.2.88-.437 1.265-.822c.365-.355.646-.788.822-1.265c.151-.388.33-.97.379-2.043c.053-1.16.064-1.508.064-4.445s-.011-3.285-.064-4.445c-.049-1.073-.228-1.655-.379-2.043c-.2-.513-.437-.88-.822-1.265a3.4 3.4 0 0 0-1.265-.822c-.388-.151-.97-.33-2.043-.379m-5.85 12.345a3.669 3.669 0 0 0 4-5.986a3.67 3.67 0 1 0-4 5.986M8.002 8.002a5.654 5.654 0 1 1 7.996 7.996a5.654 5.654 0 0 1-7.996-7.996m10.906-.814a1.337 1.337 0 1 0-1.89-1.89a1.337 1.337 0 0 0 1.89 1.89" clip-rule="evenodd" />
                         </svg></a>
+                    
                     </div>
                 </div>
 

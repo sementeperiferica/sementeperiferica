@@ -167,6 +167,7 @@ img{
   }
   .nav__logo img {
     width: 180px;
+    align-items: center;
   }
 }
 
@@ -283,6 +284,10 @@ img{
 .about__img{
   width: 280px;
   border-radius: .5rem;
+  justify-self: center;
+}
+
+.Eco{
   justify-self: center;
 }
 
