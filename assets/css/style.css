@@ -168,6 +168,7 @@ img{
   .nav__logo img {
     width: 180px;
     align-items: center;
+    margin-bottom: 15px;
   }
 }
 
@@ -186,6 +187,7 @@ img{
 
 .nav__link{
   transition: .3s;
+  align-items: center;
 }
 
 .nav__link:hover{
@@ -524,6 +526,7 @@ img{
   .app__store{
     margin: 0 var(--mb-1) 0 0;
   }
+
 }
 
 @media screen and (min-width: 960px){
@@ -540,14 +543,23 @@ img{
   .app__container{
     column-gap: 7rem;
   }
+
+  .nav__logo img{
+    margin-bottom: 15px;
+  }
 }
 
 @media screen and (min-height: 721px) {
     .home__container {
         height: 640px;
     }
+
+    .nav__logo img{
+      margin-bottom: 15px;
+    }
 }
 
 footer {
   background-color: var(--first-color-alt);
 }
+
