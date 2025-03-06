@@ -57,10 +57,20 @@ html{
 
 body.dark-theme{
   --title-color: ;
-  --text-color: #fff;
-  --body-color: #000000;
+  .services__content{
+    color: #fff
+  };
+  .home__subtitle{
+    color: #fff
+  };
+  .about__container{
+    color: #fff;
+  };
+  .nav.bd-container{
+    background-color: #000;
+  }
+  --body-color: #000;
   --container-color: #181616;
-
 }
 
 
