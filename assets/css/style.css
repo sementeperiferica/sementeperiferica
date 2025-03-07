@@ -198,6 +198,7 @@ img{
 .nav__link{
   transition: .3s;
   align-items: center;
+  display: block;
 }
 
 .nav__link:hover{
@@ -425,12 +426,6 @@ img{
   margin: .25rem 0 var(--mb-3);
 }
 
-.footer__social{
-  font-size: 1.5rem;
-  color: var(--title-color);
-  margin-right: var(--mb-2);
-}
-
 .footer__title{
   font-size: var(--h2-font-size);
   color: #fff;
@@ -573,3 +568,9 @@ footer {
   background-color: var(--first-color-alt);
 }
 
+ul.nav__list{
+  margin-top: 5px;
+}
+.insta{
+  margin-top: 4px;
+}
