@@ -51,38 +51,35 @@ window.addEventListener('scroll', scrollHeader)
 
 const themeButton = document.getElementById("theme-button");
 const darkTheme = "dark-theme";
-const iconTheme = "bx-sun";
 const logo = document.getElementById("logo");
+const semperiImage = document.getElementById("semperi"); // Pegando a imagem "SemPeri"
 
-// Verifique se os caminhos das imagens estão corretos
-const lightLogo = "assets/img/SEMENTE PERIFERICA.png"; // Modo claro
-const darkLogo = "assets/img/semente 6.png";   // Modo escuro
+// Caminhos das imagens (sem espaços nos nomes)
+const lightLogo = "assets/img/SEMENTE PERIFERICA.png"; 
+const darkLogo = "assets/img/semente 6.png";  
+const lightSemperi = "assets/img/SemPeri.png";  
+const darkSemperi = "assets/img/SemPeri dark.png";  
 
-// Obtém o tema salvo no localStorage (se houver)
+// Obtém o tema salvo no localStorage
 const selectedTheme = localStorage.getItem("selected-theme");
 
 // Aplica o tema salvo ao carregar a página
 if (selectedTheme) {
     document.body.classList.toggle(darkTheme, selectedTheme === "dark");
-    
-    // Define a imagem correta ao carregar a página
-    if (selectedTheme === "dark") {
-        logo.src = darkLogo;
-    } else {
-        logo.src = lightLogo;
-    }
-} else {
-    // Se não houver tema salvo, usa a imagem padrão do modo claro
-    logo.src = lightLogo;
+
+    // Define as imagens corretas ao carregar a página
+    logo.src = selectedTheme === "dark" ? darkLogo : lightLogo;
+    semperiImage.src = selectedTheme === "dark" ? darkSemperi : lightSemperi;
 }
 
-// Evento de clique para alternar tema e trocar a imagem do logotipo
+// Evento de clique para alternar tema e trocar as imagens
 themeButton.addEventListener("click", () => {
     document.body.classList.toggle(darkTheme);
     const isDark = document.body.classList.contains(darkTheme);
 
-    // Define a imagem correta conforme o tema
+    // Troca as imagens conforme o tema
     logo.src = isDark ? darkLogo : lightLogo;
+    semperiImage.src = isDark ? darkSemperi : lightSemperi;
 
     // Salva a escolha do usuário no localStorage
     localStorage.setItem("selected-theme", isDark ? "dark" : "light");
