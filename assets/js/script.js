@@ -49,39 +49,46 @@ function scrollHeader(){
 }
 window.addEventListener('scroll', scrollHeader)
 
-const themeButton = document.getElementById('theme-button')
-const darkTheme = 'dark-theme'
-const iconTheme = 'bx-sun'
+const themeButton = document.getElementById("theme-button");
+const darkTheme = "dark-theme";
+const iconTheme = "bx-sun";
+const logo = document.getElementById("logo");
 
-// Previously selected topic (if user selected)
-const selectedTheme = localStorage.getItem('selected-theme')
-const selectedIcon = localStorage.getItem('selected-icon')
+// Verifique se os caminhos das imagens estão corretos
+const lightLogo = "assets/img/SEMENTE PERIFERICA.png"; // Modo claro
+const darkLogo = "assets/img/semente 6.png";   // Modo escuro
 
-// We obtain the current theme that the interface has by validating the dark-theme class
-const getCurrentTheme = () => document.body.classList.contains(darkTheme) ? 'dark' : 'light'
-const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? 'bx-moon' : 'bx-sun'
+// Obtém o tema salvo no localStorage (se houver)
+const selectedTheme = localStorage.getItem("selected-theme");
 
+// Aplica o tema salvo ao carregar a página
 if (selectedTheme) {
-  document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme)
-  themeButton.classList[selectedIcon === 'bx-moon' ? 'add' : 'remove'](iconTheme)
+    document.body.classList.toggle(darkTheme, selectedTheme === "dark");
+    
+    // Define a imagem correta ao carregar a página
+    if (selectedTheme === "dark") {
+        logo.src = darkLogo;
+    } else {
+        logo.src = lightLogo;
+    }
+} else {
+    // Se não houver tema salvo, usa a imagem padrão do modo claro
+    logo.src = lightLogo;
 }
 
-themeButton.addEventListener('click', () => {
-    document.body.classList.toggle(darkTheme)
-    themeButton.classList.toggle(iconTheme)
-    localStorage.setItem('selected-theme', getCurrentTheme())
-    localStorage.setItem('selected-icon', getCurrentIcon())
-})
+// Evento de clique para alternar tema e trocar a imagem do logotipo
+themeButton.addEventListener("click", () => {
+    document.body.classList.toggle(darkTheme);
+    const isDark = document.body.classList.contains(darkTheme);
 
-function scrollTop(){
-    const scrollTop = document.getElementById('scroll-top');
-    if(this.scrollY >= 560) scrollTop.classList.add('show-scroll'); else scrollTop.classList.remove('show-scroll')
-}
-window.addEventListener('scroll', scrollTop)
+    // Define a imagem correta conforme o tema
+    logo.src = isDark ? darkLogo : lightLogo;
+
+    // Salva a escolha do usuário no localStorage
+    localStorage.setItem("selected-theme", isDark ? "dark" : "light");
+});
 
 
-const selected_Theme = localStorage.getItem('selected-theme')
-const selected_Icon = localStorage.getItem('selected-icon')
 
 
 const sr = ScrollReveal({
