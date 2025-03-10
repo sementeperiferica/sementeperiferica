@@ -40,7 +40,6 @@
             .card {
                 width: 100%;
                 height: 100%;
-                border-radius: 8px;
                 overflow: hidden;
                 box-shadow: 0 2px 4px rgba(0,0,0,0.1);
                 transition: transform 0.3s ease;
@@ -59,6 +58,8 @@
             .card-body {
                 padding: 15px;
                 background: #fff;
+                border-bottom-right-radius: 10px;
+                border-bottom-left-radius: 10px;
             }
 
             .card-body > h3{
@@ -93,7 +94,7 @@
             <nav class="nav bd-container">
                 
                 <a href="#" class="nav__logo"><br><img src="assets/img/SEMENTE PERIFÉRICA (1080 x 1080 px).png" alt="Logo da oyá estética" width="250"></a>
-
+                
                 <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list">
                         <li class="nav__item"><a href="#home" class="nav__link active-link">Página inicial</a></li>
@@ -105,9 +106,114 @@
                     </ul>
                 </div>
 
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class='bx bx-menu'></i>
+                
+                
+                <div class="nav__icons">
+                    <a href="https://www.instagram.com/semente.periferica/" class="insta" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24">
+                        <path fill="#fff" fill-rule="evenodd" d="M7.465 1.066C8.638 1.012 9.012 1 12 1s3.362.013 4.534.066s1.972.24 2.672.511c.733.277 1.398.71 1.948 1.27c.56.549.992 1.213 1.268 1.947c.272.7.458 1.5.512 2.67C22.988 8.639 23 9.013 23 12s-.013 3.362-.066 4.535c-.053 1.17-.24 1.97-.512 2.67a5.4 5.4 0 0 1-1.268 1.949c-.55.56-1.215.992-1.948 1.268c-.7.272-1.5.458-2.67.512c-1.174.054-1.548.066-4.536.066s-3.362-.013-4.535-.066c-1.17-.053-1.97-.24-2.67-.512a5.4 5.4 0 0 1-1.949-1.268a5.4 5.4 0 0 1-1.269-1.948c-.271-.7-.457-1.5-.511-2.67C1.012 15.361 1 14.987 1 12s.013-3.362.066-4.534s.24-1.972.511-2.672a5.4 5.4 0 0 1 1.27-1.948a5.4 5.4 0 0 1 1.947-1.269c.7-.271 1.5-.457 2.67-.511m8.98 1.98c-1.16-.053-1.508-.064-4.445-.064s-3.285.011-4.445.064c-1.073.049-1.655.228-2.043.379c-.513.2-.88.437-1.265.822a3.4 3.4 0 0 0-.822 1.265c-.151.388-.33.97-.379 2.043c-.053 1.16-.064 1.508-.064 4.445s.011 3.285.064 4.445c.049 1.073.228 1.655.379 2.043c.176.477.457.91.822 1.265c.355.365.788.646 1.265.822c.388.151.97.33 2.043.379c1.16.053 1.507.064 4.445.064s3.285-.011 4.445-.064c1.073-.049 1.655-.228 2.043-.379c.513-.2.88-.437 1.265-.822c.365-.355.646-.788.822-1.265c.151-.388.33-.97.379-2.043c.053-1.16.064-1.508.064-4.445s-.011-3.285-.064-4.445c-.049-1.073-.228-1.655-.379-2.043c-.2-.513-.437-.88-.822-1.265a3.4 3.4 0 0 0-1.265-.822c-.388-.151-.97-.33-2.043-.379m-5.85 12.345a3.669 3.669 0 0 0 4-5.986a3.67 3.67 0 1 0-4 5.986M8.002 8.002a5.654 5.654 0 1 1 7.996 7.996a5.654 5.654 0 0 1-7.996-7.996m10.906-.814a1.337 1.337 0 1 0-1.89-1.89a1.337 1.337 0 0 0 1.89 1.89" clip-rule="evenodd" />
+                    </svg></a>
+                    <i class='bx bx-book-open' id="magazine-icon"></i>
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class='bx bx-menu'></i>
+                    </div>
                 </div>
+                
+                
+                
+                <div id="sidebar" class="sidebar">
+                    <span class="close-btn" id="close-sidebar">&times;</span>
+                    <div class="sidebar-content">
+                        <h2>Datas Importantes</h2>
+                        <ul>
+                            <li>10 a 13 de Março - Apresentações das chapas</li>
+                            <li>14 de Março - Debate eleitoral</li>
+                            <li>18 de Março - Eleições </li>
+                            <li>19 de Março - Resultado das eleições</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <style>
+                    .nav__icons {
+                        display: flex;
+                        align-items: center;
+                        gap: 28px;
+                    }
+                    
+                    .bx {
+                        font-size: 24px;
+                        cursor: pointer;
+                        color: #fff;
+                        user-select: none;
+                    }
+
+                    .nav__icons i {
+                        margin-bottom: 4px;
+                    }
+                
+                    .sidebar {
+                        position: fixed;
+                        top: 0;
+                        right: -100%;
+                        width: 100%;
+                        height: 100%;
+                        background: rgba(0, 0, 0, 0.9);
+                        color: white;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        transition: right 0.3s ease;
+                    }
+                    
+                    .sidebar-content {
+                        text-align: center;
+                    }
+                
+                    .close-btn {
+                        position: absolute;
+                        top: 20px;
+                        right: 30px;
+                        font-size: 30px;
+                        cursor: pointer;
+                    }
+
+                    .rotated {
+                    transform: rotate(360deg);
+                    transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+                    }
+
+                    .rotated-back {
+                    transform: rotate(-360deg);
+                    transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+                    }
+                    
+                </style>
+                
+                <script>
+                    document.getElementById("magazine-icon").addEventListener("click", function() {
+                    document.getElementById("sidebar").style.right = "0";
+                    });
+    
+                    document.getElementById("close-sidebar").addEventListener("click", function() {
+                    document.getElementById("sidebar").style.right = "-100%";
+                    });
+                
+                    let menuIcon = document.getElementById("nav-toggle");
+                    let rotated = false;
+
+                    menuIcon.addEventListener("click", function() {
+                        if (rotated) {
+                            menuIcon.classList.remove("rotated");
+                            menuIcon.classList.add("rotated-back");
+                        } else {
+                            menuIcon.classList.remove("rotated-back");
+                            menuIcon.classList.add("rotated");
+                        }
+                        rotated = !rotated;
+                    });
+                </script>
+                
             </nav>
         </header>
 
@@ -136,12 +242,13 @@
                             </p>
 
                             <a href="" class="button" id="mostrarImagensBtn">Nossos Produtos</a>
+                            <a href="https://www.sementeperiferica.com/" class="button" target="_blank">Visite a Semente!</a>
 
                             <div class="imagens" id="imagensDiv" style="display: none;">
                                 <img class="ecobag" src="assets/img/Ecobag1.jpg" alt="Imagem 1">
                                 <img class="ecobag" src="assets/img/Ecobag2.jpg" alt="Imagem 2">
 
-                                <a href="https://www.sementeperiferica.com/" class="button" id="novoBotao" target="_blank" style="display: none;">Visite a Semente!</a>
+                                <a href="https://www.sementeperiferica.com/" class="button" target="_blank" style="display: none;">Visite a Semente!</a>
                             </div>
 
                             <script>
@@ -170,40 +277,46 @@
             </section>
 
             <section class="services section bd-container" id="services">
-                <span class="section-subtitle">Detalhes</span>
                 <h2 class="section-title">Algumas de nossas<br>propostas:</h2>
+                <h4 class="section-title">Cultura</h4>
+                
 
                 <div class="services__container  bd-grid">
                     <div class="services__content">
                         <h3 class="services__title">Proposta 1</h3>
-                        <p class="services__description">Clube Musical – Encontros semanais ou aos fins de semana para discutir e trocar experiências sobre música e álbuns marcantes, incentivando a cultura musical entre os alunos.</p>
+                        <p class="services__description">Palestras e Apresentações – Organização de eventos frequentes, como palestras, desfiles, apresentações de dança, canto e outras expressões artísticas, incentivando a participação ativa dos alunos.
+                        </p>
                     </div>
 
                     <div class="services__content">
                         <h3 class="services__title">Proposta 2</h3>
-                        <p class="services__description">Palestras e Apresentações – Organização de eventos frequentes, como palestras, desfiles, apresentações de dança, canto e outras expressões artísticas, incentivando a participação ativa dos alunos.</p>
+                        <p class="services__description">Clube Musical – Encontros semanais ou aos fins de semana para discutir e trocar experiências sobre música e álbuns marcantes, incentivando a cultura musical entre os alunos.</p>
                     </div>
 
                     <div class="services__content">
                         <h3 class="services__title">Proposta 3</h3>
-                        <p class="services__description">Inclusão de Todos os Turnos – Unificação dos turnos (manhã, tarde e noite) em eventos, festas e oportunidades iguais, com representantes de cada período para fortalecer a integração.</p>
+                        <p class="services__description">Café Literário – Grupo de leitura com representantes de várias salas e turnos, promovendo discussões semanais sobre livros escolhidos, acompanhadas de um café colaborativo e resumo individual dos participantes.
+                        </p>
                     </div>
 
                     <div class="services__content">
                         <h3 class="services__title">Proposta 4</h3>
-                        <p class="services__description">Feira do Empreendimento – Espaço para pequenos empreendedores da comunidade divulgarem e praticarem seus serviços (trança, corte de cabelo, conserto de celular, etc.) aos sábados, a preços acessíveis ou gratuitamente para fins de divulgação.</p>
+                        <p class="services__description">Movimentar os livros da biblioteca, de uma forma preservada, influenciando o desenvolvimento da leitura.
+                        </p>
                     </div>
 
+                    <h4 class="section-title">Social</h4>
+        
                     <div class="services__content">
                         <h3 class="services__title">Proposta 5</h3>
-                        <p class="services__description">Café Literário – Grupo de leitura com representantes de várias salas e turnos, promovendo discussões semanais sobre livros escolhidos, acompanhadas de um café colaborativo e resumo individual dos participantes.</p>
+                        <p class="services__description">Dia do T: Dia da troca e doação no ambiente escolar, de itens que não são mais úteis, ajudando com o desapego e consumismo exagerado.</p>
                     </div>
+                    
 
                     <div class="services__content">
                         <h3 class="services__title">Proposta 6</h3>
-                        <p class="services__description">Dia do T: Dia da troca e doação no ambiente escolar, de itens que não são mais úteis, ajudando com o desapego e consumismo exagerado.</p>
+                        <p class="services__description">Feira do Empreendimento – Espaço para pequenos empreendedores da comunidade divulgarem e praticarem seus serviços (trança, corte de cabelo, conserto de celular, etc.) aos sábados, a preços acessíveis ou gratuitamente para fins de divulgação.</p>
                     </div>
-
                     <div class="services__content">
                         <h3 class="services__title">Proposta 7</h3>
                         <p class="services__description">Mural de arte: um mural na escola trocado semanalmente com as tags, artes dos alunos, para influenciar o talento e incentivar a não pichação das paredes e locais da escola.</p>
@@ -211,23 +324,29 @@
 
                     <div class="services__content">
                         <h3 class="services__title">Proposta 8</h3>
-                        <p class="services__description">Eventos culturais e educativos, influenciando o aprendizado dinâmico.</p>
+                        <p class="services__description">Inclusão de Todos os Turnos – Unificação dos turnos (manhã, tarde e noite) em eventos, festas e oportunidades iguais, com representantes de cada período para fortalecer a integração.
+                        </p>
                     </div>
+
+
                     <div class="services__content">
                         <h3 class="services__title">Proposta 9</h3>
-                        <p class="services__description">⁠Passeios culturais e educativos.</p>
+                        <p class="services__description">⁠Evento para aflorar e valorizar os talentos dos alunos, como: desenho, dança, música, artesanato, artes marciais, etc.</p>
                     </div>
                     <div class="services__content">
                         <h3 class="services__title">Proposta 10</h3>
-                        <p class="services__description">Movimentar os livros da biblioteca, de uma forma preservada, influenciando o desenvolvimento da leitura.</p>
+                        <p class="services__description">Feira Cultural - propõe a promoção da diversidade cultural, criatividade e aprendizado prático, incentivando a troca de conhecimentos entre alunos e professores. O evento contará com exposições, apresentações artísticas, atividades interativas e desfiles, explorando temas como cultura, sustentabilidade, tecnologia e arte.</p>
                     </div>
+
+                    <h4 class="section-title">Esporte</h4>
+
                     <div class="services__content">
                         <h3 class="services__title">Proposta 11</h3>
-                        <p class="services__description">Pintar ônibus no rio de janeiro.                        </p>
+                        <p class="services__description">Excursão ao Museu do Futebol para proporcionar uma experiência imersiva na história do esporte no Brasil. A visita incluirá um tour guiado pelas exposições interativas, que contam a evolução do futebol e sua relação com a cultura nacional.</p>
                     </div>
                     <div class="services__content">
                         <h3 class="services__title">Proposta 12</h3>
-                        <p class="services__description">⁠Evento para aflorar e valorizar os talentos dos alunos, como: desenho, dança, música, artesanato, artes marciais, etc.</p>
+                        <p class="services__description">Realização do Interclasse nos dois semestres, promovendo a integração entre os estudantes por meio de competições esportivas e culturais. No primeiro semestre, as modalidades esportivas como futebol, basquete, vôlei e handebol serão disputadas, além de atividades culturais como apresentações de dança, teatro e música.</p>
                     </div>
                     
                 </div>
@@ -309,7 +428,7 @@
 
                     <div class="card-wrapper">
                         <div class="card">
-                            <img src="assets/img/Hemilly victoria.jpeg" class="card-img" alt="Imagem 1">
+                            <img src="assets/img/Hemilly.jpeg" class="card-img" alt="Imagem 1">
                             <div class="card-body">
                                 <h3>Hemilly Victoria</h3>
                                 <p>1º Tesoureiro</p>
@@ -348,7 +467,7 @@
                     
                     <div class="card-wrapper">
                         <div class="card">
-                            <img src="assets/img/Rafadsiobd.jpg" class="card-img" alt="Imagem 1">
+                            <img src="assets/img/RAfael.jpeg" class="card-img" alt="Imagem 1">
                             <div class="card-body">
                                 <h3>Rafael Santos</h3>
                                 <p>Dev Front-End</p>
@@ -461,6 +580,24 @@
                             </div>
                         </div>
                     </div>
+                    <div class="card-wrapper">
+                        <div class="card">
+                            <img src="assets/img/Ana Júlia Lemes.jpeg" class="card-img" alt="Imagem 1">
+                            <div class="card-body">
+                                <h3>Ana Júlia</h3>
+                                <p>Social</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-wrapper">
+                        <div class="card">
+                            <img src="assets/img/Melissa Barros Miranda.jpeg" class="card-img" alt="Imagem 1">
+                            <div class="card-body">
+                                <h3>Melissa Barros</h3>
+                                <p>Cultura</p>
+                            </div>
+                        </div>
+                    </div>
             </section>
             
         <footer class="footer_section_bd-container">
@@ -470,9 +607,7 @@
                     <a href="#" class="footer__logo">Semente Periférica</a>
                     <br> <br>
                     <div>
-                        <a href="https://www.instagram.com/semente.periferica/" class="footer__social" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24">
-                            <path fill="#fff" fill-rule="evenodd" d="M7.465 1.066C8.638 1.012 9.012 1 12 1s3.362.013 4.534.066s1.972.24 2.672.511c.733.277 1.398.71 1.948 1.27c.56.549.992 1.213 1.268 1.947c.272.7.458 1.5.512 2.67C22.988 8.639 23 9.013 23 12s-.013 3.362-.066 4.535c-.053 1.17-.24 1.97-.512 2.67a5.4 5.4 0 0 1-1.268 1.949c-.55.56-1.215.992-1.948 1.268c-.7.272-1.5.458-2.67.512c-1.174.054-1.548.066-4.536.066s-3.362-.013-4.535-.066c-1.17-.053-1.97-.24-2.67-.512a5.4 5.4 0 0 1-1.949-1.268a5.4 5.4 0 0 1-1.269-1.948c-.271-.7-.457-1.5-.511-2.67C1.012 15.361 1 14.987 1 12s.013-3.362.066-4.534s.24-1.972.511-2.672a5.4 5.4 0 0 1 1.27-1.948a5.4 5.4 0 0 1 1.947-1.269c.7-.271 1.5-.457 2.67-.511m8.98 1.98c-1.16-.053-1.508-.064-4.445-.064s-3.285.011-4.445.064c-1.073.049-1.655.228-2.043.379c-.513.2-.88.437-1.265.822a3.4 3.4 0 0 0-.822 1.265c-.151.388-.33.97-.379 2.043c-.053 1.16-.064 1.508-.064 4.445s.011 3.285.064 4.445c.049 1.073.228 1.655.379 2.043c.176.477.457.91.822 1.265c.355.365.788.646 1.265.822c.388.151.97.33 2.043.379c1.16.053 1.507.064 4.445.064s3.285-.011 4.445-.064c1.073-.049 1.655-.228 2.043-.379c.513-.2.88-.437 1.265-.822c.365-.355.646-.788.822-1.265c.151-.388.33-.97.379-2.043c.053-1.16.064-1.508.064-4.445s-.011-3.285-.064-4.445c-.049-1.073-.228-1.655-.379-2.043c-.2-.513-.437-.88-.822-1.265a3.4 3.4 0 0 0-1.265-.822c-.388-.151-.97-.33-2.043-.379m-5.85 12.345a3.669 3.669 0 0 0 4-5.986a3.67 3.67 0 1 0-4 5.986M8.002 8.002a5.654 5.654 0 1 1 7.996 7.996a5.654 5.654 0 0 1-7.996-7.996m10.906-.814a1.337 1.337 0 1 0-1.89-1.89a1.337 1.337 0 0 0 1.89 1.89" clip-rule="evenodd" />
-                        </svg></a>
+                        
                     
                     </div>
                 </div>

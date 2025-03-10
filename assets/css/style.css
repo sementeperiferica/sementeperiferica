@@ -56,11 +56,56 @@ html{
 }
 
 body.dark-theme{
-  --title-color: ;
-  --text-color: #fff;
-  --body-color: #000000;
-  --container-color: #181616;
+  .services__content{
+    color: #fff
+  };
+  .home__subtitle{
+    color: #a352e6
+  };
+  .home__title{
+    color: #a352e6;
+  };
+  a.button{
+    background-color: #a352e6;
+  };
+  .about__container{
+    color: #fff;
+  };
+  .nav.bd-container{
+    background-color: #000;
+  };
 
+  .l-header{
+    background-color: #000;
+  }
+
+  section{
+    color: #a352e6;
+  }
+  h2{
+    color: #a352e6;
+  }
+  span{
+    color: #a352e6;
+  }
+  h3{
+    color: #a352e6;
+  }
+  .card-body{
+    background-color: #0e0d0d;
+  }
+  .footer_section_bd-container{
+    background-color: #a352e6;
+  }
+  .scrolltop{
+    background-color: #a352e6;
+  }
+
+  h4.section-title{
+    color: #fff;
+  }
+  --body-color: #000;
+  --container-color: #181616;
 }
 
 
@@ -168,6 +213,17 @@ img{
   .nav__logo img {
     width: 180px;
     align-items: center;
+    margin-bottom: 15px;
+  }
+
+  body.dark-theme{
+    .nav.bd-container{
+      background-color: #000;
+    }
+
+    .nav__menu.show-menu{
+      background-color: #000;
+    }
   }
 }
 
@@ -186,6 +242,8 @@ img{
 
 .nav__link{
   transition: .3s;
+  align-items: center;
+  display: block;
 }
 
 .nav__link:hover{
@@ -413,12 +471,6 @@ img{
   margin: .25rem 0 var(--mb-3);
 }
 
-.footer__social{
-  font-size: 1.5rem;
-  color: var(--title-color);
-  margin-right: var(--mb-2);
-}
-
 .footer__title{
   font-size: var(--h2-font-size);
   color: #fff;
@@ -524,6 +576,7 @@ img{
   .app__store{
     margin: 0 var(--mb-1) 0 0;
   }
+
 }
 
 @media screen and (min-width: 960px){
@@ -540,14 +593,38 @@ img{
   .app__container{
     column-gap: 7rem;
   }
+
+  .nav__logo img{
+    margin-bottom: 15px;
+  }
+  
+  h4.section-title{
+    display: none;
+  }
 }
 
 @media screen and (min-height: 721px) {
     .home__container {
         height: 640px;
     }
+
+    .nav__logo img{
+      margin-bottom: 15px;
+    }
 }
 
 footer {
   background-color: var(--first-color-alt);
+}
+
+ul.nav__list{
+  margin-top: 5px;
+}
+.insta{
+  margin-top: 4px;
+}
+
+.services__description{
+  text-align: justify;
+  hyphens: auto;
 }
