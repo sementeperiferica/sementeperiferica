@@ -636,3 +636,10 @@ ul.nav__list{
   text-align: justify;
   hyphens: auto;
 }
+
+.card-img-top {
+  height: 400px; /* Ajuste a altura conforme necessário */
+  object-fit: cover;
+  width: 100%;
+}
+
