@@ -588,6 +588,7 @@ img{
 }
 
 @media screen and (min-width: 960px){
+
   .bd-container{
     margin-left: auto;
     margin-right: auto;
@@ -609,6 +610,17 @@ img{
   h4.section-title{
     display: none;
   }
+
+  .card {
+    width: 400px;
+  }
+
+  .card-wrappere {
+    width: 100%;
+    justify-content: center;
+  }
+
+
 }
 
 @media screen and (min-height: 721px) {
@@ -637,9 +649,9 @@ ul.nav__list{
   hyphens: auto;
 }
 
-.card-img-top {
-  height: 400px; /* Ajuste a altura conforme necessário */
-  object-fit: cover;
-  width: 100%;
+.container-novo{
+  display: flex;
+  flex-direction: column;
 }
+
 
