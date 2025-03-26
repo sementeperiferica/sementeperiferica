@@ -102,3 +102,17 @@ sr.reveal(`.home__data, .home__img,
             .footer__content`, {
     interval: 200
 })
+
+// Obtém todos os cards dentro da seção
+const cards = document.querySelectorAll('.card');
+
+// Para cada card, adiciona um ouvinte de evento para alternar a visibilidade do conteúdo ao clicar
+cards.forEach(card => {
+    card.addEventListener('click', () => {
+        // Encontra o corpo do card
+        const cardBody = card.querySelector('.card-body');
+
+        // Alterna a classe 'expanded' para mostrar ou esconder o conteúdo
+        cardBody.classList.toggle('expanded');
+    });
+});
