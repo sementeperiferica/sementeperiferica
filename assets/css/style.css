@@ -114,6 +114,21 @@ body.dark-theme{
   }
   --body-color: #000;
   --container-color: #181616;
+  .carousel-caption {
+    background-color: #a352e6;
+  }
+  .carousel-button {
+    background-color: #a352e6;
+  }
+  .toggle-btn{
+    background-color: #a352e6
+  }
+  .card{
+    background-color: #000;
+  }
+  .card-text.open{
+    color: #fff;
+  }
 }
 
 

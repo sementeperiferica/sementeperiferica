@@ -85,9 +85,6 @@ themeButton.addEventListener("click", () => {
     localStorage.setItem("selected-theme", isDark ? "dark" : "light");
 });
 
-
-
-
 const sr = ScrollReveal({
     origin: 'top',
     distance: '30px',
@@ -102,3 +99,4 @@ sr.reveal(`.home__data, .home__img,
             .footer__content`, {
     interval: 200
 })
+
