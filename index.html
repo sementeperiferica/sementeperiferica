@@ -141,10 +141,10 @@
             }
             .carousel-item img {
                 width: 100%;
-                max-height: 600px;
+                max-height: 800px;
                 display: block;
                 object-fit: cover;
-            }
+            } 
             .carousel-caption {
                 position: absolute;
                 bottom: 20px;
@@ -188,10 +188,10 @@
                     font-size: 12px;
                 }
                 .carousel-container{
-                    max-height: 340px;
+                    max-height: 540px;
                 }
                 img.arte{
-                    max-height: 340px;
+                    max-height: 540px;
                 }
             }
 
@@ -713,29 +713,46 @@
 
             <script>
                 document.querySelectorAll('[data-carousel]').forEach(carousel => {
-                  const container = carousel.querySelector('.carousel-container');
-                  const items = carousel.querySelectorAll('.carousel-item');
-                  const prevBtn = carousel.querySelector('.prev');
-                  const nextBtn = carousel.querySelector('.next');
-                  let index = 0;
-              
-                  function updateCarousel() {
+                const container = carousel.querySelector('.carousel-container');
+                const items = carousel.querySelectorAll('.carousel-item');
+                const prevBtn = carousel.querySelector('.prev');
+                const nextBtn = carousel.querySelector('.next');
+                let index = 0;
+                let autoplayInterval;
+
+                function updateCarousel() {
                     container.style.transform = `translateX(-${index * 100}%)`;
-                  }
-              
-                  prevBtn.addEventListener('click', () => {
+                }
+
+                prevBtn.addEventListener('click', () => {
                     index = (index - 1 + items.length) % items.length;
                     updateCarousel();
-                  });
-              
-                  nextBtn.addEventListener('click', () => {
+                    resetAutoplay(); // reinicia o autoplay ao interagir
+                });
+
+                nextBtn.addEventListener('click', () => {
                     index = (index + 1) % items.length;
                     updateCarousel();
-                  });
-              
-                  // Inicializa o carrossel
-                  updateCarousel();
+                    resetAutoplay(); // reinicia o autoplay ao interagir
                 });
+
+                function startAutoplay() {
+                    autoplayInterval = setInterval(() => {
+                    index = (index + 1) % items.length;
+                    updateCarousel();
+                    }, 3000); // troca a cada 5 segundos
+                }
+
+                function resetAutoplay() {
+                    clearInterval(autoplayInterval);
+                    startAutoplay();
+                }
+
+                // Inicializa o carrossel
+                updateCarousel();
+                startAutoplay(); // inicia autoplay automaticamente
+                });
+
               </script>
     </body>
 </html> 
