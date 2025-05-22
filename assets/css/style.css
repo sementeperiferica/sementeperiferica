@@ -3,12 +3,12 @@
 :root {
   --header-height: 3rem;
 
-  --first-color: #238707;
-  --first-color-alt: #064201;
-  --title-color: #238707;
+  --first-color: #2d4409;
+  --first-color-alt: #95d926;
+  --title-color: #2d4409;
   --text-color: #;
-  --text-color-light: #A6A6A6;
-  --body-color: #fff;
+  --text-color-light: #ffffff;
+  --body-color: #ffffff;
   --container-color: #ffffff;
 
   --body-font: 'Poppins', sans-serif;
@@ -72,11 +72,11 @@ body.dark-theme{
     color: #fff;
   };
   .nav.bd-container{
-    background-color: #000;
+    background-color: #2c073e;
   };
 
   .l-header{
-    background-color: #000;
+    background-color: #2c073e;
   }
 
   section{
@@ -112,7 +112,7 @@ body.dark-theme{
   h4.section-title{
     color: #fff;
   }
-  --body-color: #000;
+  --body-color: #0d0315;
   --container-color: #181616;
   .carousel-caption {
     background-color: #a352e6;
@@ -270,7 +270,7 @@ img{
 }
 
 .nav__link:hover{
-  color: #b4a8a8;
+  color: #ffffff;
 }
 
 .nav__toggle{
