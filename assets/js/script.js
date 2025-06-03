@@ -113,3 +113,4 @@ cards.forEach(card => {
         cardBody.classList.toggle('expanded');
     });
 });
+<><rssapp-imageboard id="S7rcAVrT2hgLT0OY"></rssapp-imageboard><script src="https://widget.rss.app/v1/imageboard.js" type="text/javascript" async></script></>
