@@ -113,4 +113,25 @@ cards.forEach(card => {
         cardBody.classList.toggle('expanded');
     });
 });
-<><rssapp-imageboard id="S7rcAVrT2hgLT0OY"></rssapp-imageboard><script src="https://widget.rss.app/v1/imageboard.js" type="text/javascript" async></script></>
+
+const feedUrl = "https://api.rss2json.com/v1/api.json?rss_url=https://novaescola.org.br/feed";
+
+fetch(feedUrl)
+  .then(response => response.json())
+  .then(data => {
+    const container = document.getElementById("noticias");
+    data.items.slice(0, 5).forEach(item => {
+      const card = document.createElement("div");
+      card.style = "margin-bottom: 20px; padding: 10px; background: #f1f1f1; border-radius: 10px;";
+      card.innerHTML = `
+        <h3 style="margin-bottom: 5px;">${item.title}</h3>
+        <p style="font-size: 14px;">${item.description.slice(0, 150)}...</p>
+        <a href="${item.link}" target="_blank" style="color: blue;">Ler mais</a>
+      `;
+      container.appendChild(card);
+    });
+  })
+  .catch(error => {
+    document.getElementById("noticias").innerHTML = "<p>Erro ao carregar notícias.</p>";
+    console.error("Erro ao buscar feed:", error);
+  });
