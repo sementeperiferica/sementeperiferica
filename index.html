@@ -393,54 +393,118 @@
                 </div>
             </section>
 
-            <section class="services section bd-container" id="services">
-                <h2 class="section-title">Algumas de nossas<br>propostas:</h2>
-                <h4 class="section-title">Cultura</h4>
-                
+           <!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AJEUM Literário</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fafafa;
+    }
+    header {
+      background: #4a148c;
+      color: white;
+      text-align: center;
+      padding: 1.5rem;
+    }
+    h1 {
+      margin: 0;
+    }
+    .container {
+      width: 90%;
+      margin: 20px auto;
+    }
+    .section-title {
+      font-size: 1.5rem;
+      margin-bottom: 15px;
+      color: #333;
+    }
+    .livro-momento {
+      background: #ede7f6;
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 30px;
+    }
+    .livro-momento h2 {
+      margin-top: 0;
+      color: #4a148c;
+    }
+    .livro-momento a {
+      display: inline-block;
+      margin-right: 10px;
+      text-decoration: none;
+      color: white;
+      background: #4a148c;
+      padding: 10px 15px;
+      border-radius: 6px;
+    }
+    .acervo-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 15px;
+      text-align: center;
+      box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+    }
+    .card h3 {
+      margin: 10px 0;
+      color: #4a148c;
+    }
+    .card a {
+      display: block;
+      margin: 5px 0;
+      text-decoration: none;
+      color: white;
+      background: #6a1b9a;
+      padding: 8px;
+      border-radius: 6px;
+    }
+  </style>
+</head>
+<body>
+    <h1>AJEUM Literário</h1>
 
-                <div class="services__container  bd-grid">
+  <div class="container">
+    <div class="card">
+  <img src=assetsimg/gabriel alt="Capa do Livro 1">
+  <h3>Diario de um banana</h3>
+  <p>Jeff Kinney</p>
+  <div class="links">
+    <a href="pdfs/.pdf" target="_blank">📖 Ler Online</a>
+    <a href="pdfs/livro1.pdf" download>⬇️ Baixar</a>
+  </div>
+</div>
 
-                    <div class="services__content">
-                        <h3 class="services__title">Proposta 1</h3>
-                        <p class="services__description">Café Literário – Grupo de leitura com representantes de várias salas e turnos, promovendo discussões semanais sobre livros escolhidos, acompanhadas de um café colaborativo e resumo individual dos participantes.
-                        </p>
-                    </div>
 
-                    <h4 class="section-title">Social</h4>
-        
-                    <div class="services__content">
-                        <h3 class="services__title">Proposta 2</h3>
-                        <p class="services__description">Mural de arte: um mural na escola trocado semanalmente com as tags, artes dos alunos, para influenciar o talento e incentivar a não pichação das paredes e locais da escola.</p>
-                    </div>
+    <h2 class="section-title">📚 Acervo de Livros</h2>
+    <div class="acervo-container">
+      <!-- Exemplo de card -->
+      <div class="card">
+        <h3>Ainda não temos livros no acervo</h3>
+        <p>Em breve, novos títulos estarão disponíveis.</p>
+      </div>
+      <!-- Quando tiver livros, ficaria assim:
+      <div class="card">
+        <h3>A Hora da Estrela</h3>
+        <a href="pdfs/ahora_da_estrela.pdf" download>📥 Baixar PDF</a>
+        <a href="viewer.html?file=pdfs/ahora_da_estrela.pdf">👀 Ler Online</a>
+      </div>
+      -->
+    </div>
+  </div>
+</body>
+</html>
 
-                    <div class="services__content">
-                        <h3 class="services__title">Proposta 3</h3>
-                        <p class="services__description">Inclusão de Todos os Turnos – Unificação dos turnos (manhã, tarde e noite) em eventos, festas e oportunidades iguais, com representantes de cada período para fortalecer a integração.
-                        </p>
-                    </div>
-
-                    <h4 class="section-title">Esporte</h4>
-
-                    <div class="services__content">
-                        <h3 class="services__title">Proposta 4</h3>
-                        <p class="services__description">Excursão ao Museu do Futebol para proporcionar uma experiência imersiva na história do esporte no Brasil. A visita incluirá um tour guiado pelas exposições interativas, que contam a evolução do futebol e sua relação com a cultura nacional.</p>
-                </div>
-                    <div class="services__content">
-                        <h3 class="services__title">Proposta 5</h3>
-                        <p class="services__description">Realização do Interclasse nos dois semestres, promovendo a integração entre os estudantes por meio de competições esportivas e culturais. No primeiro semestre, as modalidades esportivas como futebol, basquete, vôlei e handebol serão disputadas, além de atividades culturais como apresentações de dança, teatro e música.</p>
-                    </div>
-                    <div class="services__content">
-                        <h3 class="services__title">Proposta 6</h3>
-                        <p class="services__description">interescolar, onde teriamos jogos contra outra escola.</p>
-                    </div>
-
-                    <h4 class="section-title">Política</h4>
-                            
-                    <div class="services__content">
-                        <h3 class="services__title">Proposta 7</h3>
-                        <p class="services__description">Campanha de conscientização de datas importantes como, o dia da mulher, o setembro amarelo, consciência negra, etc.
-                    </div>        
-            </section>
             
            
             </section>
@@ -534,6 +598,55 @@
                   <button class="carousel-button prev">&#10094;</button>
                   <button class="carousel-button next">&#10095;</button   
                   </div>
+            </section>
+
+            <section class="services section bd-container" id="services">
+                <h2 class="section-title">Algumas de nossas<br>propostas:</h2>
+                <h4 class="section-title">Cultura</h4>
+                
+
+                <div class="services__container  bd-grid">
+
+                    <div class="services__content">
+                        <h3 class="services__title">Proposta 1</h3>
+                        <p class="services__description">Café Literário – Grupo de leitura com representantes de várias salas e turnos, promovendo discussões semanais sobre livros escolhidos, acompanhadas de um café colaborativo e resumo individual dos participantes.
+                        </p>
+                    </div>
+
+                    <h4 class="section-title">Social</h4>
+        
+                    <div class="services__content">
+                        <h3 class="services__title">Proposta 2</h3>
+                        <p class="services__description">Mural de arte: um mural na escola trocado semanalmente com as tags, artes dos alunos, para influenciar o talento e incentivar a não pichação das paredes e locais da escola.</p>
+                    </div>
+
+                    <div class="services__content">
+                        <h3 class="services__title">Proposta 3</h3>
+                        <p class="services__description">Inclusão de Todos os Turnos – Unificação dos turnos (manhã, tarde e noite) em eventos, festas e oportunidades iguais, com representantes de cada período para fortalecer a integração.
+                        </p>
+                    </div>
+
+                    <h4 class="section-title">Esporte</h4>
+
+                    <div class="services__content">
+                        <h3 class="services__title">Proposta 4</h3>
+                        <p class="services__description">Excursão ao Museu do Futebol para proporcionar uma experiência imersiva na história do esporte no Brasil. A visita incluirá um tour guiado pelas exposições interativas, que contam a evolução do futebol e sua relação com a cultura nacional.</p>
+                </div>
+                    <div class="services__content">
+                        <h3 class="services__title">Proposta 5</h3>
+                        <p class="services__description">Realização do Interclasse nos dois semestres, promovendo a integração entre os estudantes por meio de competições esportivas e culturais. No primeiro semestre, as modalidades esportivas como futebol, basquete, vôlei e handebol serão disputadas, além de atividades culturais como apresentações de dança, teatro e música.</p>
+                    </div>
+                    <div class="services__content">
+                        <h3 class="services__title">Proposta 6</h3>
+                        <p class="services__description">interescolar, onde teriamos jogos contra outra escola.</p>
+                    </div>
+
+                    <h4 class="section-title">Política</h4>
+                            
+                    <div class="services__content">
+                        <h3 class="services__title">Proposta 7</h3>
+                        <p class="services__description">Campanha de conscientização de datas importantes como, o dia da mulher, o setembro amarelo, consciência negra, etc.
+                    </div>        
             </section>
 
 
