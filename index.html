@@ -471,39 +471,127 @@
     }
   </style>
 </head>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AJEUM Literário</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f7f7f7;
+      color: #333;
+    }
+    header {
+      background: #222;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    nav {
+      margin-top: 1rem;
+    }
+    nav a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 2rem;
+    }
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 1rem;
+    }
+    .card {
+      background: white;
+      border-radius: 10px;
+      padding: 1rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+      text-align: center;
+    }
+    .card h3 {
+      margin: 0.5rem 0;
+    }
+    .card a {
+      display: inline-block;
+      margin-top: 0.5rem;
+      background: #222;
+      color: white;
+      padding: 6px 12px;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
 <body>
+</body>
     <h1>AJEUM Literário</h1>
+    <nav>
+      <a href="#inicio">Início</a>
+      <a href="#livro-momento">Livro do Momento</a>
+      <a href="#acervo">Acervo</a>
+    </nav>
+  </header>
 
-  <div class="container">
+  <!-- Página inicial -->
+  <section id="inicio">
+    <h2>Bem-vindo ao AJEUM Literário 📚</h2>
+    <p>Um espaço para compartilhar leituras, trocar ideias e construir conhecimento coletivo.</p>
+  </section>
+
+  <!-- Livro do momento -->
+  <section id="livro-momento">
+    <h2>📖 Livro do Momento</h2>
     <div class="card">
-  <img src="assets/img/BIANCA LOPES.jpeg" alt="Capa do Livro 1">
-  <h3>Diario de um banana</h3>
-  <p>Jeff Kinney</p>
-  <div class="links">
-    <a href="pdfs/livro1.pdf" target="_blank">📖 Ler Online</a>
-    <a href="pdfs/livro1.pdf" download>⬇️ Baixar</a>
-  </div>
-</div>
-
-
-    <h2 class="section-title">📚 Acervo de Livros</h2>
-    <div class="acervo-container">
-      <!-- Exemplo de card -->
-      <div class="card">
-        <h3>Ainda não temos livros no acervo</h3>
-        <p>Em breve, novos títulos estarão disponíveis.</p>
-      </div>
-      <!-- Quando tiver livros, ficaria assim:
-      <div class="card">
-        <h3>A Hora da Estrela</h3>
-        <a href="pdfs/ahora_da_estrela.pdf" download>📥 Baixar PDF</a>
-        <a href="viewer.html?file=pdfs/ahora_da_estrela.pdf">👀 Ler Online</a>
-      </div>
-      -->
+      <h3>A Hora da Estrela</h3>
+      <p>Clarice Lispector</p>
+      <!-- O PDF deve estar na pasta /pdfs -->
+      <a href="pdfs/livro1.pdf" target="_blank">Ler PDF</a>https://drive.google.com/drive/u/0/folders/1SBPrWm1GLz7H9oqwJR1WeSpfDyscCpIU
     </div>
-  </div>
+  </section>
+
+  <!-- Acervo de livros -->
+  <section id="acervo">
+    <h2>📚 Acervo</h2>
+    <div class="container">
+      <div class="card">
+        <h3>Dom Casmurro</h3>
+        <p>Machado de Assis</p>
+        <a href="pdfs/dom-casmurro.pdf" target="_blank">Ler PDF</a>
+      </div>
+      <div class="card">
+        <h3>Quarto de Despejo</h3>
+        <p>Carolina Maria de Jesus</p>
+        <a href="pdfs/quarto-de-despejo.pdf" target="_blank">Ler PDF</a>
+      </div>
+      <div class="card">
+        <h3>Capitães da Areia</h3>
+        <p>Jorge Amado</p>
+        <a href="pdfs/capitaes-da-areia.pdf" target="_blank">Ler PDF</a>
+      </div>
+      <!-- Você pode adicionar mais cards de livros aqui -->
+    </div>
+  </section>
+
+  <footer>
+    <p>AJEUM Literário - Semente Periférica © 2025</p>
+  </footer>
 </body>
 </html>
+
 
             
            
