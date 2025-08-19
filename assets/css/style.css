@@ -212,7 +212,7 @@ img{
 }
 
 .nav{
-  max-width: 1024px;
+  max-width: 100%;
   height: var(--header-height);
   display: flex;
   justify-content: space-between;
