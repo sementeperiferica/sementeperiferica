@@ -731,3 +731,63 @@ ul.nav__list{
   font-size: 0.9em;
   color: #555;
 }
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f8f8f8;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.genero {
+  margin-bottom: 40px;
+}
+
+.genero h2 {
+  margin-left: 10px;
+}
+
+.livros-row {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  padding: 10px;
+  scroll-behavior: smooth;
+}
+
+.livros-row::-webkit-scrollbar {
+  height: 8px;
+}
+.livros-row::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 4px;
+}
+
+.card {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  width: 200px;
+  flex-shrink: 0;
+  text-align: center;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.card a {
+  display: block;
+  margin: 5px 0;
+  text-decoration: none;
+  color: #0066cc;
+  font-weight: bold;
+}
