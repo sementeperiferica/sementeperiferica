@@ -1,5 +1,4 @@
 {
     "totvsLanguageServer.welcomePage": false,
-    "totvsLanguageServer.editor.linter.includes": "C:\\TOTVS\\Protheus\\INCLUDE",
-    "liveServer.settings.port": 5501
+    "totvsLanguageServer.editor.linter.includes": "C:\\TOTVS\\Protheus\\INCLUDE"
 }
