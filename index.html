@@ -8,197 +8,7 @@
         <link rel="shortcut icon" href="assets/img/SEMENTE PERIFERICA.png">
         <title>Semente Periférica</title>
 
-        <style>
-            .card {
-            width: 100%;
-            max-width: 300px; 
-            margin: 10px auto; 
-            text-align: center;
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-            }
-
-            .card-container, .card-wrapper {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            }
-
-            .card-img {
-            width: 100%;
-            height: 250px; 
-            object-fit: cover; 
-            }
-            .card-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px; 
-            }
-
-            .card-wrapper {
-            width: calc(33.333% - 20px);
-            max-width: 350px; 
-            min-width: 280px; 
-            }
-
-            .card {
-            background: #fff;
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-            text-align: center;
-            }
-
-            .card-img {
-            width: 100%;
-            height: 250px; 
-            object-fit: cover;
-            }
-
-            .card-body {
-            padding: 15px;
-            }
-
-            .card h3 {
-            font-size: 1.2em;
-            margin-bottom: 5px;
-            }
-
-            .card p {
-            font-size: 0.9em;
-            color: #555;
-            }
-
-            .card button {
-            background: #238707;
-            color: rgb(255, 255, 255);
-            border: none;
-            cursor: pointer;
-            padding: 12px;
-            font-size: 12px;
-            z-index: 1;
-            border-radius: 5px;
-            text-align: center;
-            }
-            .card-body button{
-                background: #2d4409;
-                color: rgb(255, 255, 255);
-                border: none;
-                cursor: pointer;
-                padding: 12px;
-                font-size: 12px;
-                z-index: 1;
-                border-radius: 5px;
-                text-align: center;
-            }
-            .hidden {
-                max-height: 0;
-                overflow: hidden;
-                opacity: 0;
-                transition: all 0.5s ease;
-            }
-
-            .card-text {
-                max-height: 0;
-                overflow: hidden;
-                opacity: 0;
-                transition: max-height 0.5s ease, opacity 0.5s ease;
-            }
-            .card-text.open {
-                opacity: 1;
-                color: #000;
-            }
-
-
-            .imagens {
-            display: none;
-            margin-top: 20px;
-            }
-
-            .ecobag{
-                border-radius: 10px;
-            }
-            
-            .carousel {
-            position: relative;
-            width: 100%;
-            max-width: 600px;
-            overflow: hidden;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-            margin: 0 auto;
-            }
-            .carousel-container {
-                display: flex;
-                transition: transform 0.5s ease-in-out;
-            }
-            .carousel-item {
-                min-width: 100%;
-                transition: opacity 0.5s;
-                position: relative;
-            }
-            .carousel-item img {
-                width: 100%;
-                max-height: 800px;
-                display: block;
-                object-fit: cover;
-            } 
-            .carousel-caption {
-                position: absolute;
-                bottom: 20px;
-                left: 50%;
-                transform: translateX(-50%);
-                background: #2d4409;
-                color: white;
-                padding: 5px 15px;
-                border-radius: 5px;
-                font-size: 20px;
-                text-align: center;
-            }
-            .carousel-button {
-                position: absolute;
-                top: 50%;
-                transform: translateY(-50%);
-                background: #2d4409;
-                color: white;
-                border: none;
-                cursor: pointer;
-                padding: 15px;
-                font-size: 22px;
-                z-index: 1;
-                border-radius: 5px;
-            }
-            .prev {
-                left: 10px;
-            }
-            .next {
-                right: 10px;
-            }
-            @media (max-width: 768px) {
-                .carousel {
-                    width: 100%;
-                }
-                .carousel-button {
-                    padding: 12px;
-                    font-size: 18px;
-                }
-                .carousel-caption {
-                    font-size: 12px;
-                }
-                .carousel-container{
-                    max-height: 540px;
-                }
-                img.arte{
-                    max-height: 540px;
-                }
-            }
-
-            .carro {
-                font-weight: 600;
-            }
-            </style>
+        <!-- Estilos movidos para assets/css/style.css -->
 
     </head>
     <body>
@@ -248,64 +58,7 @@
                     </div>
                 </div>
                 
-                <style>
-                    .nav__icons {
-                        display: flex;
-                        align-items: center;
-                        gap: 20px;
-                        height: 100%;
-                    }
-                    
-                    .bx {
-                        font-size: 24px;
-                        cursor: pointer;
-                        color: #fff;
-                        user-select: none;
-                        margin-bottom: 0;
-                    }
-
-                    .nav__icons i {
-                        margin-bottom: 0;
-                    }
-                
-                    .sidebar {
-                        position: fixed;
-                        top: 0;
-                        right: -100%;
-                        width: 100%;
-                        height: 100%;
-                        background: rgba(0, 0, 0, 0.9);
-                        color: white;
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: center;
-                        align-items: center;
-                        transition: right 0.3s ease;
-                    }
-                    
-                    .sidebar-content {
-                        text-align: center;
-                    }
-                
-                    .close-btn {
-                        position: absolute;
-                        top: 20px;
-                        right: 30px;
-                        font-size: 30px;
-                        cursor: pointer;
-                    }
-
-                    .rotated {
-                    transform: rotate(360deg);
-                    transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
-                    }
-
-                    .rotated-back {
-                    transform: rotate(-360deg);
-                    transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
-                    }
-                    
-                </style>
+                <!-- Estilos do sidebar movidos para assets/css/style.css -->
                 
                 <script>
                     document.getElementById("magazine-icon").addEventListener("click", function() {
@@ -409,120 +162,11 @@
   </div>
 </section>
 
-<style>
-    
-  /* Layout principal */
-  .ajeum-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 32px;
-    max-width: 1300px;
-    margin: 0 auto;
-    padding: 24px;
-    align-items: start;
-  }
-
-  @media (min-width: 1100px) {
-    .ajeum-grid {
-      grid-template-columns: 1fr 0.8fr 1fr; /* texto - card - bio+botão */
-    }
-    .bio-inscricao {
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-    }
-  }
-
-  /* Texto */
-  .intro-text h2 { margin-bottom: 12px; font-size: 1.8rem; }
-  .intro-text p {
-    margin: 12px 0;
-    font-size: 1rem;
-    line-height: 1.6;
-    text-align: justify;
-  }
-
-  /* Convite acervo */
-  .convite-acervo {
-    margin-top: 32px;
-    padding: 16px;
-    background: #f9fafb;
-    border: 1px solid #e5e7eb;
-    border-radius: 8px;
-  }
-  body.dark-theme .convite-acervo {
-    background: #000 !important;
-    border-color: #a352e6;
-  }
-  body.dark-theme .convite-acervo h3 {
-    color: #a352e6;
-  }
-  body.dark-theme .convite-acervo p {
-    color: #fff;
-  }
-  .convite-acervo h3 {
-    margin-bottom: 8px;
-    font-size: 1.3rem;
-  }
-
-  /* Card */
-  .livro-card { text-align: center; }
-  .card {
-    border: 1px solid #ffffff;
-    border-radius: 12px;
-    padding: 16px;
-    background: #000000;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-  }
-  .card img {
-    width: 250px;
-    border-radius: 8px;
-    margin-bottom: 12px;
-  }
-
-  /* Biografia */
-  .bio-livro h2 { margin-bottom: 10px; font-size: 1.5rem; }
-  .bio-livro p {
-    font-size: 1rem;
-    line-height: 1.6;
-    text-align: justify;
-  }
-
-  /* Botões padrão */
-  .links {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin-top: 12px;
-  }
-  .btn {
-    display: inline-block;
-    padding: 10px 14px;
-    border-radius: 8px;
-    background: #1e3a8a;
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-    transition: 0.2s;
-  }
-  .btn:hover { background: #adc5ec; }
-
-  /* Botão inscrição */
-  .btn-inscricao {
-    display: inline-block;
-    padding: 12px 18px;
-    background: #16a34a;
-    color: #fff;
-    border-radius: 8px;
-    font-weight: bold;
-    text-decoration: none;
-    transition: 0.2s;
-  }
-  .btn-inscricao:hover { background: #22c55e; }
-</style>
+<!-- Estilos da seção Ajeum movidos para assets/css/style.css -->
 
   </section>
 
+  <!-- ATENÇÃO: página HTML aninhada detectada abaixo. Esta seção está inválida dentro de index.html e precisa ser extraída ou corrigida. -->
   <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -565,7 +209,7 @@
     border-radius: 8px;
     text-align: center;
     scroll-snap-align: start;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 6px rgba(225, 117, 117, 0.1);
     transition: transform 0.3s, box-shadow 0.3s;
   }
 
@@ -591,9 +235,9 @@
     margin: 5px 0;
   }
 
-  .card p {
+  .card p {  /* nome do autor */
     font-size: 14px;
-    color: #555;
+    color: #878787;
     margin: 0;
   }
 </style>
